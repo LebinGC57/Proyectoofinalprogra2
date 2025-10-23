@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Smarboyapp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Smarboyapp" parent="Base.Theme.Smarboyapp" />
+
+    <!-- Estilo para RatingBar -->
+    <style name="RatingBarStyle" parent="Widget.AppCompat.RatingBar">
+        <item name="colorControlNormal">@color/light_gray</item>
+        <item name="colorControlActivated">@color/turquoise</item>
+    </style>
+
+    <!-- Estilo para Switch -->
+    <style name="SwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorControlActivated">@color/turquoise</item>
+        <item name="colorSwitchThumbNormal">@color/light_gray</item>
+        <item name="android:colorForeground">@color/turquoise</item>
+    </style>
+</resources>

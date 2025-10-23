@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Smarboyapp">
+
+
+        <!-- Splash Screen como actividad principal -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Smarboyapp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CategorySelectionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PreferencesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".FoodRecommendationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DetailedFoodRecommendationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GymRecommendationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DetailedGymRecommendationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AiAssistantActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GoogleAuthActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ProgressActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+
+        <!-- Nuevas actividades -->
+        <activity
+            android:name=".FavoritesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GoalsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".FiltersActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ReviewsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
