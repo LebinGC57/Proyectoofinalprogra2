@@ -4,6 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
     <application
         android:allowBackup="true"
@@ -110,6 +114,27 @@
 
         <activity
             android:name=".MapsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ChefConscienteActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CameraActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".VoiceChefActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ChefInnovadorActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".InventarioInteligenteActivity"
             android:exported="false" />
 
     </application>

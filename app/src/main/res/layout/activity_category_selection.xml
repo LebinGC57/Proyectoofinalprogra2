@@ -59,6 +59,15 @@
             android:layout_marginBottom="12dp"/>
 
         <Button
+            android:id="@+id/btnChef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🍳 Chef Consciente"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
             android:id="@+id/btnFavorites"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

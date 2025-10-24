@@ -35,6 +35,7 @@ public class CategorySelectionActivity extends AppCompatActivity {
         Button btnFood = findViewById(R.id.btnFood);
         Button btnGym = findViewById(R.id.btnGym);
         Button btnAI = findViewById(R.id.btnAI);
+        Button btnChef = findViewById(R.id.btnChef);
         Button btnStats = findViewById(R.id.btnStats);
         Button btnSettings = findViewById(R.id.btnSettings);
         Button btnFavorites = findViewById(R.id.btnFavorites);
@@ -73,6 +74,12 @@ public class CategorySelectionActivity extends AppCompatActivity {
 
         btnAI.setOnClickListener(v -> {
             Intent intent = new Intent(CategorySelectionActivity.this, AiAssistantActivity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+        });
+
+        btnChef.setOnClickListener(v -> {
+            Intent intent = new Intent(CategorySelectionActivity.this, ChefConscienteActivity.class);
             startActivity(intent);
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
         });

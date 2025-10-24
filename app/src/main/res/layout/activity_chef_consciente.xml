@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🍳"
+                    android:textSize="60sp"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chef Consciente"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Crea comidas deliciosas con lo que tienes"
+                    android:textSize="16sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:alpha="0.9"
+                    android:layout_marginBottom="24dp"/>
+
+            </LinearLayout>
+
+            <!-- Botón principal -->
+            <Button
+                android:id="@+id/btnWhatToCook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍳 ¿Qué cocino hoy?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="20dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_rounded"
+                android:textColor="#FFFFFF"/>
+
+            <!-- Botón de voz -->
+            <Button
+                android:id="@+id/btnVoiceChef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎤 Chef Consciente por Voz"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_rounded_secondary"
+                android:textColor="#FFFFFF"/>
+
+            <!-- Botón Chef Innovador -->
+            <Button
+                android:id="@+id/btnChefInnovador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✨ Chef Innovador - Propuestas Gourmet"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_rounded_secondary"
+                android:textColor="#FFFFFF"/>
+
+            <!-- Botón Inventario Inteligente -->
+            <Button
+                android:id="@+id/btnInventarioInteligente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📦 Gestor de Inventario Inteligente"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/button_rounded_secondary"
+                android:textColor="#FFFFFF"/>
+
+            <!-- Sección de imagen -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="📸 Analizar ingredientes desde foto"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
+
+                    <Button
+                        android:id="@+id/btnTakePhoto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="📷 Tomar foto"
+                        android:textSize="14sp"
+                        android:padding="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/button_rounded_secondary"
+                        android:textColor="#FFFFFF"/>
+
+                    <Button
+                        android:id="@+id/btnSelectPhoto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="🖼️ Galería"
+                        android:textSize="14sp"
+                        android:padding="12dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/button_rounded_secondary"
+                        android:textColor="#FFFFFF"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivSelectedImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/image_placeholder"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btnAnalyzeIngredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔍 Analizar ingredientes"
+                    android:textSize="16sp"
+                    android:padding="12dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/button_rounded_secondary"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <!-- Sección de texto -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="✍️ O escribe tus ingredientes"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="16dp"/>
+
+                <EditText
+                    android:id="@+id/etIngredientsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ej: Tomate, cebolla, ajo, pollo, arroz..."
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#CCFFFFFF"
+                    android:minLines="3"
+                    android:gravity="top"/>
+
+            </LinearLayout>
+
+            <!-- Ingredientes detectados -->
+            <TextView
+                android:id="@+id/tvDetectedIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/ingredients_detected_background"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"/>
+
+            <!-- Contenedor de recetas -->
+            <LinearLayout
+                android:id="@+id/llRecipeContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
