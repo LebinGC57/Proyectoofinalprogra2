@@ -1,5 +1,7 @@
 README.md - Smarboy App
 
+EN EL SIGUIENTE LINK ENCONTRARA LA DOCUMENTACION DEL PROYECTO Y LA EXPLICACION DEL VIDEO DEL MISMO: https://drive.google.com/drive/folders/1IIVAuuo_aOo2gJBxRNn2gRe2jRW7qynr?usp=sharing
+
 
 1. Descripción del Proyecto
 
